@@ -1,0 +1,50 @@
+:root {
+    --app-font-family: 'IBM Plex Mono';
+    --heading-title-color: '#212121';
+    --main-heading-size: 70px;
+    --primary: greenyellow;
+}
+
+*, ::before, ::after {
+    font-family: var(--app-font-family);
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* scoped variable */
+    /* --font-color: red;
+    color: var(--font-color) */
+}
+
+header h1 {
+    font-weight: 900;
+    color: var(--heading-title-color);
+    font-size: var(--main-heading-size);
+    border-bottom: 1px solid var(--heading-title-color);
+}
+
+main {
+    padding-top: 30px;
+    width: 60%;
+    margin: auto;
+}
+
+main p {
+    text-align: justify;
+    color: var(--font-color)
+}
+
+main p span {
+    /* we want to hightlight some of the text 
+        color of the highlighter will be same as primary color of the app
+    */
+    background-color: var(--primary);
+    padding: 0px 5px;
+    border: 2px solid black;
+}
